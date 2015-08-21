@@ -9,3 +9,6 @@ Portfolio was created using AngularJS, RequireJS, NodeJS, and Polymer paper elem
 2.) Once you are in the root folder run: `npm install` in the command line to install the required module dependencies (the dependencies are listed in package.json).
 
 2.) Once the dependencies are installed run: `node server` to view the content on `http://localhost:9000/`
+
+## Notes
+Username and password were removed from the contact-form.php, to test form submission on the contact page these references will need to be updated. 
