@@ -1,8 +1,7 @@
 # angularjs-portfolio
 Codebase for http://www.erinbamberger.com
 
-Portfolio was created with AngularJS, Require.js, Node.js. Contact form submits with PHP and also shows off the Polymer
-paper elements in modern browsers.
+Portfolio was created using AngularJS, RequireJS, NodeJS, and Polymer paper elements. 
 
 ## Installation
 1.) After cloning use the command line to navigate into the root folder: `cd C:/path-to-folder-location`
