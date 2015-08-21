@@ -1,0 +1,103 @@
+CACHE MANIFEST
+#
+# root page
+#
+404.html
+contact-form.php
+favicon.png
+index.html
+#
+# css
+#
+css/animate.css
+css/base.css
+css/bootstrap.3.3.4.min.css
+css/font-awesome.css
+css/main.css
+css/views.css
+#
+# images
+#
+images/404-background.png
+images/avatar.png
+images/border.png
+images/coca-cola-beta-site-ahh-zone.png
+images/coca-cola-beta-site-big-game.png
+images/coca-cola-beta-site-disney-selfie.png
+images/coca-cola-beta-site-live-nation.png
+images/coca-cola-beta-site-mcdonalds-promotion.png
+images/coca-cola-beta-site-refreshing-resolutions.png
+images/coca-cola-beta-site-share-a-coke-spotify.jpg
+images/coca-cola-beta-site-thrill-or-chill.png
+images/coca-cola-classic-site-holiday-2013.png
+images/coca-cola-classic-site-nascar-updates.png
+images/coca-cola-unified-site-angular-js-profile.png
+images/coca-cola-unified-site-brands-menu.png
+images/coca-cola-unified-site-interests-menu.png
+images/contact-background.jpg
+images/loading.gif
+images/manheim-prototype-1.png
+images/manheim-prototype-2.png
+images/scotch-tape.png
+images/transparent.png
+images/wrapper-background.png
+#
+# js/controllers
+#
+js/controllers/404Ctrl.js
+js/controllers/contactCtrl.js
+js/controllers/index.js
+js/controllers/mainCtrl.js
+js/controllers/module.js
+js/controllers/sidebarCtrl.js
+js/controllers/workCtrl.js
+#
+# js/directives
+#
+js/directives/hoverAnimationDirective.js
+js/directives/index.js
+js/directives/module.js
+js/directives/resizeDirective.js
+#
+# js/factories
+#
+js/factories/index.js
+js/factories/module.js
+js/factories/worksFactory.js
+#
+# js/lib
+#
+js/lib/angular.min.js
+js/lib/angular-ui-router.min.js
+js/lib/app.js
+js/lib/bootstrap.js
+js/lib/bootstrap-ie9.js
+js/lib/countdown-timer.js
+js/lib/jquery-1.11.3.min.js
+js/lib/less.min.js
+js/lib/main.js
+js/lib/main-ie9.js
+js/lib/modernizr.2.8.3.min.js
+js/lib/ng-polymer-elements.js
+js/lib/require.min.js
+js/lib/requirejs-domready.min.js
+js/lib/routes.js
+js/lib/ui-bootstrap-0.13.0.min.js
+js/lib/webcomponents.min.js
+#
+# views
+#
+views/404-sidebar.html
+views/contact.html
+views/home.html
+views/resume.html
+views/sidebar.html
+views/work.html
+#
+# views/resume-content
+#
+views/resume-content/about-me.html
+views/resume-content/assignment-history.html
+views/resume-content/key-skills.html
+views/resume-content/professional-experience.html
+views/resume-content/recognition.html

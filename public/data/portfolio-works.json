@@ -1,0 +1,121 @@
+{
+	"portfolio": [{
+                "$id":"0001",
+                "title":"Cox Automotive",
+                "mainImg": "images/manheim-prototype-1.png",
+                "mainImgAlt": "Cox Automotive iPad Prototype",
+                "figCaption": "IBM Watson Automotive iPad prototype",
+                "description": ""
+	},{
+		"$id":"0002",
+                "title":"Manheim Auto Auctions Inc.",
+                "mainImg": "images/manheim-prototype-2.png",
+                "mainImgAlt": "Manheim Auto Auctions Inc iPad Prototype",
+                "figCaption": "Automotive iPad prototype",
+                "description": ""
+	},{
+		"$id":"0003",
+                "title":"My Coke Rewards",
+                "title2":"Unified Site",
+                "mainImg": "images/coca-cola-unified-site-angular-js-profile.png",
+                "mainImgAlt": "AngularJS Profile Settings",
+                "figCaption": "AngularJS Profile Settings development",
+                "description": "https://www.mycokerewards.com/account/authenticate"
+	},{
+		"$id":"0004",
+                "title":"My Coke Rewards",
+                "title2":"Unified Site",
+                "mainImg": "images/coca-cola-unified-site-interests-menu.png",
+                "mainImgAlt": "Interests Menu",
+                "figCaption": "Adobe CQ® Component Interests Menu Development",
+                "description": "http://www.mycokerewards.com/content/interests.html"
+	},{
+		"$id":"0005",
+                "title":"My Coke Rewards",
+                "title2":"Unified Site",
+                "mainImg": "images/coca-cola-unified-site-brands-menu.png",
+                "mainImgAlt": "Brands menu",
+                "figCaption": "Brands menu development",
+                "description": "http://www.mycokerewards.com"
+	},{
+		"$id":"0006",
+                "title":"My Coke Rewards",
+                "title2":"Beta Site",
+                "mainImg": "images/coca-cola-beta-site-ahh-zone.png",
+                "mainImgAlt": "Beta Site",
+                "figCaption": "Ahh-Zone promotion development. Promotion ended.",
+                "description": "http://www.mycokerewards.com"
+	},{
+                "$id":"0007",
+                "title":"My Coke Rewards",
+                "title2":"Beta Site",
+                "mainImg": "images/coca-cola-beta-site-big-game.png",
+                "mainImgAlt": "Beta Site",
+                "figCaption": "Share it all the way to 50K promotion development. Promotion ended.",
+                "description": "http://www.mycokerewards.com"
+        },{
+                "$id":"0008",
+                "title":"My Coke Rewards",
+                "title2":"Beta Site",
+                "mainImg": "images/coca-cola-beta-site-disney-selfie.png",
+                "mainImgAlt": "Beta Site",
+                "figCaption": "Disney Selfie promotion development. Promotion ended.",
+                "description": "http://www.mycokerewards.com"
+        },{
+                "$id":"0009",
+                "title":"My Coke Rewards",
+                "title2":"Beta Site",
+                "mainImg": "images/coca-cola-beta-site-live-nation.png",
+                "mainImgAlt": "Beta Site",
+                "figCaption": "Live Nation promotion development. Promotion ended.",
+                "description": "http://www.mycokerewards.com"
+        },{
+                "$id":"0010",
+                "title":"My Coke Rewards",
+                "title2":"Beta Site",
+                "mainImg": "images/coca-cola-beta-site-mcdonalds-promotion.png",
+                "mainImgAlt": "Beta Site",
+                "figCaption": "McDonalds Summer Grab promotion development. Promotion ended.",
+                "description": "http://www.mycokerewards.com"
+        },{
+                "$id":"0011",
+                "title":"My Coke Rewards",
+                "title2":"Beta Site",
+                "mainImg": "images/coca-cola-beta-site-refreshing-resolutions.png",
+                "mainImgAlt": "Beta Site",
+                "figCaption": "Refreshing Resolutions promotion development. Promotion ended.",
+                "description": "http://www.mycokerewards.com"
+        },{
+                "$id":"0012",
+                "title":"My Coke Rewards",
+                "title2":"Beta Site",
+                "mainImg": "images/coca-cola-beta-site-share-a-coke-spotify.jpg",
+                "mainImgAlt": "Beta Site",
+                "figCaption": "Share a Coke Spotify CQ component authoring.",
+                "description": "http://www.mycokerewards.com"
+        },{
+                "$id":"0013",
+                "title":"My Coke Rewards",
+                "title2":"Beta Site",
+                "mainImg": "images/coca-cola-beta-site-thrill-or-chill.png",
+                "mainImgAlt": "Beta Site",
+                "figCaption": "Thrill or Chill promotion development. Promotion ended.",
+                "description": "http://www.mycokerewards.com"
+        },{
+                "$id":"0014",
+                "title":"My Coke Rewards",
+                "title2":"Classic Site",
+                "mainImg": "images/coca-cola-classic-site-holiday-2013.png",
+                "mainImgAlt": "Holiday 2013 Promotion",
+                "figCaption": "Holiday 2013 promotion development. Promotion ended.",
+                "description": "http://www.mycokerewards.com"
+        },{
+		"$id":"0015",
+                "title":"My Coke Rewards",
+                "title2":"Classic Site",
+                "mainImg": "images/coca-cola-classic-site-nascar-updates.png",
+                "mainImgAlt": "NASCAR Promotion",
+                "figCaption": "NASCAR promotion development. Promotion ended.",
+                "description": "http://www.mycokerewards.com"
+	}]
+}

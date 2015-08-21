@@ -1,0 +1,171 @@
+/****************************************************************************************
+*
+*  @author Erin Bamberger
+*  @version (.1)
+*  @date (2015)
+*
+*  1.) LESS Variables _______________ @variables
+*  2.) LESS Functions _______________ @functions
+*
+*****************************************************************************************/
+/*********************************************
+*  LESS Variables                   @variables
+**********************************************/
+
+/* ---- */
+/* BASE */
+@baseWhite:           #F7F7F7;
+@baseBlack:           #000000;
+@baseCream:           #FFFCCA;
+@primaryColor:        #BCCE1E;
+
+/* ----- */
+/* LIGHT */
+@lightBlue:           #91EFE0;
+@lightGray:           #F8F8F8;
+@lightGreen:          #A4FF8E;
+@lightPurple:         #FEEDFF;
+@lightOrange:         #FFCF0F;
+@lightRed:            #FF8E8E;
+
+/* ------ */
+/* MEDIUM */
+@mediumBlue:          #517780;
+@mediumGray:          #ABABAB;
+@mediumGreen:         #4A9E36;
+@mediumPurple:        #9A6AA1;
+@mediumOrange:        #F38108;
+@mediumRed:           #FF6A6A;
+
+/* ---- */
+/* DARK */
+@darkBlue:            #090057;
+@darkGray:            #282828;
+@darkPurple:          #572656;
+@darkRed:             #B80000;
+
+/* ----- */
+/* OTHER */
+@aboutMeBG:           #B586B8;
+@aboutMeBorder:       #634465;
+@aboutMeTxtShadow:    #CFBED0;
+@keySkillsBG:         #FF6D56;
+@keySkillsBorder:     #CB4631;
+@keySkillsTxtShadow:  #FFADA0;
+@historyBG:           #FFCF0F;
+@historyBorder:       #C38200;
+@historyTxtShadow:    #FFFF86;
+@experienceBG:        #1ECEB2;
+@experienceBorder:    #00475F;
+@experienceTxtShadow: #C9EFE9;
+@teal:                #0A363F;
+@colorOne:            #002163;
+@colorTwo:            #FF4D80;
+@colorThree:          #FF005B;
+@colorFour:           #721121;
+@colorFive:           #290046;
+@colorSix:            #02394A;
+/*********************************************
+*  LESS Functions                   @functions
+**********************************************/
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.fixed {
+    position: fixed;
+}
+.full-height {
+    height: 100%;
+}
+.full-width {
+    width: 100%;
+}
+.animation (@name,@duration:0.5s,@ease:ease) {
+    -webkit-animation: @name @duration @ease;
+    -moz-animation:    @name @duration @ease;
+    -ms-animation:     @name @duration @ease;
+    animation:         @name @duration @ease;
+}
+.border-radius (@radius:5px) {
+    -webkit-border-radius:   @radius;
+    -moz-border-radius:      @radius;
+    border-radius:           @radius;
+    -moz-background-clip:    padding;
+    -webkit-background-clip: padding-box;
+    background-clip:         padding-box;
+}
+.border-radiuses (@topright:0,@bottomright:0,@bottomleft:0,@topleft:0) {
+    -webkit-border-top-right-radius:    @topright;
+    -webkit-border-bottom-right-radius: @bottomright;
+    -webkit-border-bottom-left-radius:  @bottomleft;
+    -webkit-border-top-left-radius:     @topleft;
+    -moz-border-radius-topright:        @topright;
+    -moz-border-radius-bottomright:     @bottomright;
+    -moz-border-radius-bottomleft:      @bottomleft;
+    -moz-border-radius-topleft:         @topleft;
+    border-top-right-radius:            @topright;
+    border-bottom-right-radius:         @bottomright;
+    border-bottom-left-radius:          @bottomleft;
+    border-top-left-radius:             @topleft;
+    -moz-background-clip:               padding; 
+    -webkit-background-clip:            padding-box; 
+    background-clip:                    padding-box; 
+}
+.box-shadow (@string: 1px 1px 1px 1px #000) {
+    -webkit-box-shadow: @string;
+    -moz-box-shadow:    @string;
+    box-shadow:         @string;
+}
+.box-sizing (@type:border-box) {
+    -moz-box-sizing:    @type;
+    -o-box-sizing:      @type;
+    -webkit-box-sizing: @type;
+    box-sizing:         @type;
+}
+.gradient (@origin:left,@start:#fff,@stop:#000) {
+    background-color:  @start;
+    background-image:  -webkit-linear-gradient(@origin,@start,@stop);
+    background-image:  -moz-linear-gradient(@origin,@start,@stop);
+    background-image:  -o-linear-gradient(@origin,@start,@stop);
+    background-image:  -ms-linear-gradient(@origin,@start,@stop);
+    background-image:  linear-gradient(@origin,@start,@stop);
+}
+.opacity (@opacity:0.5) {
+    -webkit-opacity: @opacity;
+    -moz-opacity:    @opacity;
+    opacity:         @opacity;
+}
+.perspective (@pixel:100px) {
+    -webkit-perspective: @pixel;
+    -moz-perspective: @pixel;
+    -ms-perspective: @pixel;
+    -o-perspective: @pixel;
+    perspective: @pixel;
+}
+.text-shadow (@string: 0 1px 3px #000) {
+    text-shadow: @string;
+}
+.transform (@string) {
+    -webkit-transform: @string;
+    -moz-transform:    @string;
+    -ms-transform:     @string;
+    -o-transform:      @string;
+}
+.transition (@prop:all,@time:1s,@ease:linear) {
+    -webkit-transition: @prop @time @ease;
+    -moz-transition:    @prop @time @ease;
+    -o-transition:      @prop @time @ease;
+    -ms-transition:     @prop @time @ease;
+    transition:         @prop @time @ease;
+}
+.user-select (@value) {
+    -webkit-touch-callout: @value;
+    -webkit-user-select:   @value;
+    -khtml-user-select:    @value;
+    -moz-user-select:      @value;
+    -ms-user-select:       @value;
+    user-select:           @value;
+}

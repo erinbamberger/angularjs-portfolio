@@ -1,0 +1,92 @@
+<div id="sidebarViewWrapper" data-ng-controller="sidebarCtrl">
+    <!-- ============ -->
+    <!-- MENU WRAPPER -->
+    <div id="navigationWrapper">
+        <!-- ....................................... -->
+        <!-- skip navigation link for screen readers -->
+        <!--         displays on tab focus           -->
+        <a href data-ng-click="scrollTo('viewContainer')" class="offscreen">Skip to Content</a>
+        <!-- ......... -->
+        <!-- hamburger -->
+        <!--[if gt IE 9]><!--> 
+        <paper-icon-button data-ng-click="toggleMenu()" id="mobileHamburger" data-ng-class="slideNavBar ? 'active-menu' : 'inactive-menu'" class="menuButton" icon="menu" role="button" tabindex="0" aria-label="menu"></paper-icon-button>
+        <!--<![endif]-->
+        <!--[if IE 9]>        
+            <div data-ng-click="toggleMenu()" id="mobileHamburger" data-ng-class="slideNavBar ? 'active-menu' : 'inactive-menu'" class="menuButton" icon="menu" role="button" tabindex="0" aria-label="menu">
+                <i class="fa fa-bars"></i>
+            </div>
+        <![endif]--> 
+        <!-- ............ -->
+        <!-- desktop menu -->
+        <nav id="desktopPortfolioNav" data-ng-cloak>
+            <ul id="desktopPortfolioMenu" class="navigation-element">
+                <li class="nav-item home-color" data-ng-class="{current:$state.includes('home')}">
+                    <a ui-sref="home" class="nav-link">
+                        <i class="fa fa-home"></i>
+                        &nbsp;Home
+                    </a>
+                </li>
+                <li class="nav-item work-color" data-ng-class="{current:$state.includes('work')}">
+                    <a ui-sref="work" class="nav-link">
+                        <i class="fa fa-cogs"></i>
+                        &nbsp;Work
+                    </a>
+                </li>
+                <li class="nav-item resume-color" data-ng-class="{current:$state.includes('resume')}">
+                    <a ui-sref="resume.about-me" class="nav-link">
+                        <i class="fa fa-briefcase"></i>
+                        &nbsp;Resume
+                    </a>
+                </li>
+                <li class="nav-item contact-color" data-ng-class="{current:$state.includes('contact')}">
+                    <a ui-sref="contact" class="nav-link">
+                        <i class="fa fa-envelope-o"></i>
+                        &nbsp;Contact
+                    </a>
+                </li>
+                <li class="nav-item blog-color">
+                    <a href="http://www.erinbamblogger.com" target="_blank">
+                        <i class="fa fa-book"></i>
+                        &nbsp;Blog
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- ........... -->
+    <!-- mobile menu -->
+    <nav id="mobilePortfolioNav" data-ng-class="slideNavBar ? 'active-menu' : 'inactive-menu'">
+        <ul id="mobilePortfolioMenu" class="navigation-element">
+            <li class="nav-item home-color">
+                <a ui-sref="home" data-ng-class="{active:$state.includes('home')}" class="nav-link" data-ng-click="toggleMenu()">
+                    <i class="fa fa-home"></i>
+                    &nbsp;Home
+                </a>
+            </li>
+            <li class="nav-item work-color">
+                <a ui-sref="work" data-ng-class="{active:$state.includes('work')}" class="nav-link" data-ng-click="toggleMenu()">
+                    <i class="fa fa-cogs"></i>
+                    &nbsp;Work
+                </a>
+            </li>
+            <li class="nav-item resume-color">
+                <a ui-sref="resume.about-me" data-ng-class="{active:$state.includes('resume')}" class="nav-link" data-ng-click="toggleMenu()">
+                    <i class="fa fa-briefcase"></i>
+                    &nbsp;Resume
+                </a>
+            </li>
+            <li class="nav-item contact-color">
+                <a ui-sref="contact" data-ng-class="{active:$state.includes('contact')}" class="nav-link" data-ng-click="toggleMenu()">
+                    <i class="fa fa-envelope-o"></i>
+                    &nbsp;Contact
+                </a>
+            </li>
+            <li class="nav-item blog-color">
+                <a href="http://www.erinbamblogger.com" data-ng-click="toggleMenu()" target="_blank">
+                    <i class="fa fa-book"></i>
+                    &nbsp;Blog
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>

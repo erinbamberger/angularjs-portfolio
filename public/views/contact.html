@@ -1,0 +1,75 @@
+<div>
+    <div class="viewWrapper panel-body" id="contactWrapper">
+    	<h1>{{ message }}&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope"></i></h1>
+        <div>
+            <!-- ============ -->
+            <!-- CONTACT FORM -->
+            <form name="contactform" method="post" action="" class="form-horizontal" role="form" novalidate>
+                <div class="contact-group" data-ng-class="{'has-error':contactform.inputName.$invalid && !contactform.inputName.$pristine}">
+                    <div>
+                        <!--[if gt IE 9]><!--> 
+                        <paper-input-decorator floatinglabel label="Name">
+                            <input aria-label="Name" data-ng-model="formData.inputName" class="form-control" name="inputName" tabindex="2" required>
+                        </paper-input-decorator>
+                        <!--<![endif]-->
+                        <!--[if IE 9]>
+                            <label for="inputName">Name</label>        
+                            <input aria-label="Name" data-ng-model="formData.inputName" class="form-control" name="inputName" tabindex="2" required></input>
+                        <![endif]--> 
+                    </div>
+                </div>
+                <div class="contact-group" data-ng-class="{'has-error':contactform.inputEmail.$invalid && !contactform.inputEmail.$pristine}">
+                    <div id="contact-email">
+                        <!--[if gt IE 9]><!--> 
+                        <paper-input-decorator floatinglabel label="Email">
+                            <input aria-label="Email" data-ng-model="formData.inputEmail" class="form-control" name="inputEmail" tabindex="3" required>
+                        </paper-input-decorator>
+                        <!--<![endif]-->
+                        <!--[if IE 9]> 
+                            <label for="inputEmail">Email</label>         
+                            <input aria-label="Email" data-ng-model="formData.inputEmail" class="form-control" name="inputEmail" tabindex="3" required></input>
+                        <![endif]--> 
+                    </div>
+                </div>
+                <div class="contact-group" data-ng-class="{'has-error':contactform.inputSubject.$invalid && !contactform.inputSubject.$pristine}">
+                    <div id="contact-subject">
+                        <!--[if gt IE 9]><!--> 
+                        <paper-input-decorator floatinglabel label="Subject">
+                            <input aria-label="Subject" data-ng-model="formData.inputSubject" class="form-control" name="inputSubject" tabindex="4" required>
+                        </paper-input-decorator>
+                        <!--<![endif]-->
+                        <!--[if IE 9]>     
+                            <label for="inputSubject">Subject</label>   
+                            <input aria-label="Subject" data-ng-model="formData.inputSubject" class="form-control" name="inputSubject" tabindex="4" required></input>
+                        <![endif]--> 
+                    </div>
+                </div>
+                <div class="contact-group" data-ng-class="{'has-error':contactform.inputMessage.$invalid && !contactform.inputMessage.$pristine}">
+                    <div id="contact-body">
+                        <!--[if gt IE 9]><!--> 
+                        <paper-input-decorator floatinglabel label="Body">
+                            <textarea aria-label="Body" data-ng-model="formData.inputMessage" class="form-control" rows="4" name="inputMessage" tabindex="5" required></textarea>
+                        </paper-input-decorator>
+                        <!--<![endif]-->
+                        <!--[if IE 9]>  
+                            <label for="inputMessage">Body</label>      
+                            <textarea aria-label="Body" data-ng-model="formData.inputMessage" class="form-control" rows="4" name="inputMessage" tabindex="5" required></textarea>
+                        <![endif]--> 
+                    </div>
+                </div>
+                <div class="contact-group">
+                    <div>
+                        <!--[if gt IE 9]><!--> 
+                        <paper-button raised data-ng-click="submit(contactform)" id="contactBtn" data-ng-disabled="contactform.$invalid" tabindex="6">
+                            Submit
+                        </paper-button>
+                        <!--<![endif]-->
+                        <!--[if IE 9]>        
+                            <button type="button" data-ng-click="submit(contactform)" id="contactBtn" data-ng-disabled="contactform.$invalid" tabindex="6">Submit</button>
+                        <![endif]--> 
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

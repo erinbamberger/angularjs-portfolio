@@ -1,0 +1,24 @@
+<div id="modalWrapper" aria-labelledby="modalTitle" aria-describedby="modalDescription" class="modal-open">
+	<div class="closeModal">
+		<i class="fa fa-times-circle" data-ng-click="cancel()"></i>
+	</div>
+	<h2 id="modalTitle">Samples</h2>
+	<div id="dialogDescription">
+    	<p>Sample description text here</p>
+  	</div>
+	<div id="workSamples">
+		<!-- should include descriptive alt text for all work sample images -->
+		<div class="slider">
+			<img data-ng-src="{{photo}}" data-ng-repeat="photo in photos track by $index" class="slide" data-ng-swipe-right="previous()" data-ng-swipe-left="next()" data-ng-show="isActive($index)" />
+		</div>
+		<ul class="nav">
+			<li data-ng-repeat="photo in photos track by $index" data-ng-class="{'active':isActive($index)}">
+				<img data-ng-src="{{photo}}" alt="Sample Photo" data-ng-click="showPhoto($index);" />
+			</li>
+		</ul>
+	</div>
+	<div id="sliderNavArrows">
+		<i class="fa fa-arrow-left arrow prev" href="#" data-ng-click="previous()"></i>
+		<i class="fa fa-arrow-right arrow next" href="#" data-ng-click="next()"></i>
+	</div>
+</div>

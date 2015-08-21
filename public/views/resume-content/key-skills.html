@@ -1,0 +1,50 @@
+<div class="content-container">
+	<div class="heading key-skills">
+		<h4 class="sectionHeader">Key Skills</h4>
+	</div>
+	<div class="resume-section" id="resumeTop">
+		<div class="carousel-navigation">
+			<div class="circle purple" data-ng-class="{active: $state.current.activetab == 'about-me'}">
+				<a ui-sref="resume.about-me">
+					<i class="fa fa-female"></i>
+				</a>
+			</div>
+			<div class="circle salmon" data-ng-class="{active: $state.current.activetab == 'key-skills'}">
+				<a ui-sref="resume.key-skills">
+					<i class="fa fa-pencil-square-o"></i>
+				</a>
+			</div>
+			<div class="circle teal" data-ng-class="{active: $state.current.activetab == 'professional-experience'}">
+				<a ui-sref="resume.professional-experience">
+					<i class="fa fa-briefcase"></i>
+				</a>
+			</div>
+			<div class="circle yellow" data-ng-class="{active: $state.current.activetab == 'assignment-history'}">
+				<a ui-sref="resume.assignment-history">
+					<i class="fa fa-history"></i>
+				</a>
+			</div>
+			<div class="circle green" data-ng-class="{active: $state.current.activetab == 'recognition'}">
+				<a ui-sref="resume.recognition">
+					<i class="fa fa-trophy"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+	<ul class="bar-chart-axis">
+	  	<li data-ng-repeat="level in skillLevels" data-ng-class="level.range"></li>
+	</ul>
+	<ul class="bar-chart-axis-header">
+		<li data-ng-repeat="level in skillLevels">
+			<div class="label">{{level.range}}</div>
+		</li>
+	</ul>
+	<ul class="bar-chart">
+		<li data-ng-repeat="skill in keySkills">
+			<div class="skill">
+				<p>{{skill.name}}</p>
+			</div>
+			<div class="bar" data-ng-class="skill.level" data-ng-style="{'height':skill.percent,'width':skill.percent}"></div>
+		</li>
+	</ul>
+</div>

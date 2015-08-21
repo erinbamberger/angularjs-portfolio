@@ -1,0 +1,25 @@
+<div class="viewWrapper" id="workWrapper">
+	<div class="contentWrapper">
+		<ul>
+			<li class="work-header">
+				<p>A few examples of the projects I have worked on</p>
+			</li>
+	    	<li data-ng-repeat="work in workDetails.portfolio" class="blocks">
+		    	<div data-ng-attr-id="{{ 'object-' + work.$id}}">
+		    		<figure>
+		    			<img data-ng-src="{{work.mainImg}}" alt="{{work.mainImgAlt}}">
+		    		</figure>
+		    		<figcaption>
+		    			<h1>{{work.title}}</h1>
+		    			<h2 data-ng-if="work.title2">{{work.title2}}</h2>
+		    			<p>{{work.figCaption}}</p>
+		    			<p>{{work.projectName}}</p>
+		    			<small data-ng-if="work.description">
+		    				<a href="{{work.description}}" target="_blank">Site</a>
+		    			</small>
+		    		</figcaption>
+	    		</div>
+	    	</li>
+		</ul>
+	</div>
+</div>

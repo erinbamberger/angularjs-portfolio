@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Erin Bamberger | Web Designer and Front-end Developer</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Erin Bamberger is a web designer and front-end developer based in the Great Lakes region.">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<!--[if gt IE 9]><!--> 
+	<script type="text/javascript" src="js/lib/webcomponents.min.js"></script>
+	<!--<![endif]-->
+	<!-- google fonts -->
+	<link href="http://fonts.googleapis.com/css?family=Alef:400,700" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/views.css"> 
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.3.3.4.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+  	<!-- polymer core -->
+  	<!--[if gt IE 9]><!--> 
+  	<link rel="import" href="js/polymer/paper-elements/paper-elements.html">
+  	<!--<![endif]-->
+	<!-- scripts -->
+	<script type="text/javascript" src="js/lib/jquery-1.11.3.min.js"></script>
+  	<script type="text/javascript" src="js/lib/modernizr.2.8.3.min.js"></script>
+  	<script type="text/javascript" src="js/lib/countdown-timer.js"></script>
+</head>
+<!--[if gt IE 8]><!-->   
+<body data-ng-controller="mainCtrl" data-ng-class="state.current.name + 'Page'" resize data-ng-cloak>
+	<!-- ==================== -->
+	<!-- SENDING MAIL OVERLAY -->
+	<div id="sendMailOverlay" data-ng-show="sendingMail">
+	    <div class="wrapper animate-msg" data-ng-animate>
+	        <paper-spinner active></paper-spinner>
+	        <p>Sending . . .</p><!-- Sending message -->
+	    </div>
+	</div>
+	<!-- ============================ -->
+	<!-- EMAIL RESULT MESSAGE OVERLAY -->
+	<div id="submitMsg" data-ng-show="showMsg">
+	    <div class="wrapper animate-msg" data-ng-class="{true:'bg-success',false:'bg-danger'}[result]" data-ng-animate>
+	        <p class="result">
+	        	{{ resultMessage }}<br><br>
+	        	<span style="font-weight:bold">{{emailListed}}</span><br>
+	        </p>
+	        <a href="" data-ng-click="closeMsg()">
+	            <i class="fa fa-close"></i>
+	        </a>
+	    </div>
+	</div>
+  	<!-- ======= -->
+  	<!-- SIDEBAR -->
+  	<div id="portfolioSidebar" data-ui-view="sidebar" role="navigation" data-ng-class="slideNavBar ? 'active-menu' : 'inactive-menu'"></div>
+	<!-- ============ -->
+  	<!-- MAIN CONTENT -->
+	<div id="portfolioWrapper" role="main" data-ng-class="slideNavBar ? 'active-menu' : 'inactive-menu'">
+	  	<div id="portfolioMainContainer">
+			<div data-ui-view="header" id="headerContainer" class="fade-in"></div>
+	    	<div data-ui-view="content" id="viewContainer" class="fade-in"></div>
+	  	</div>
+  	</div>
+  	<!-- ====== -->
+  	<!-- FOOTER -->
+  	<footer id="portfolioFooter" role="contentinfo" data-ng-class="slideNavBar ? 'active-menu' : 'inactive-menu'">
+		<p>&copy; Copyright Erin Bamberger 2015.</p>
+  	</footer>
+  	<!--[if IE 9]>        
+		<script type="text/javascript" src="js/lib/require.min.js" data-main="js/lib/main-ie9.js"></script>
+	<![endif]--> 
+	<!--[if gt IE 9]><!-->        
+		<script type="text/javascript" src="js/lib/require.min.js" data-main="js/lib/main.js"></script>
+	<!--<![endif]-->
+</body>
+<!--<![endif]-->
+<!--[if IE 8]>  
+<body onload=theTimer()><div id=ie8NoSupportWrapper><div id=ie8NoSupportContainer><h1>Not Supported</h1><h2>Uh-Oh...</h2><span>੨( ･᷄ ︵･᷅ )ｼ</span><p>Unfortunately, this website does not support Internet Explorer 8. You can view my LinkedIn profile <a href=https://www.linkedin.com/in/erinbamberger target=_blank>here</a> (opens in a new tab).</p><p>The Internet Explorer 8 browser will no longer be supported by Microsoft beginning January 12, 2016. Using an unsupported browser may expose your PC to additional threats.</p><p>Found at the <a href="https://support.microsoft.com/en-us/lifecycle/search?sort=PN&alpha=internet%20explorer" target=_blank>Microsoft Support Site</a> (opens in a new tab):</p><div id=quote-box><p>"Beginning January 12, 2016, only the most current version of Internet Explorer available for a supported operating system will receive technical support and security updates."</p><br><span class=strong>IE 8 Support End Date Countdown</span><div id=countdown-box><div><span id=days></span> &nbsp;days,</div><div><span id=hours></span> &nbsp;hours,</div><div><span id=min></span> &nbsp;minutes,</div><div>&nbsp;and&nbsp; <span id=sec></span> &nbsp;seconds.</div></div></div></div></div>
+<![endif]--> 
+</html>
